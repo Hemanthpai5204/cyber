@@ -29,6 +29,16 @@ npm run dev
 
 Then open the printed local URL (default: http://localhost:5173).
 
+## Deploy to Netlify
+
+The repo already contains a `netlify.toml` with the correct SPA redirect.
+
+1. Push the project to GitHub/GitLab/Bitbucket.
+2. In Netlify, create a new site from that repo.
+3. Set **Build command** to `npm run build`.
+4. Set **Publish directory** to `dist`.
+5. Deploy – Netlify will handle the rest, including routing fallbacks.
+
 ### Build for Production
 
 ```bash
